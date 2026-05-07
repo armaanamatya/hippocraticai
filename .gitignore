@@ -63,5 +63,16 @@ temp/
 .coverage
 htmlcov/
 
+# TTS output — gitignore the ad-hoc one in cwd; commit the curated examples/outputs/*.mp3
+/output.mp3
+output.mp3
+
+# SQLite trace DB (Tier 3 observability — local-only)
+*.db
+*.sqlite
+*.sqlite3
+traces.db-wal
+traces.db-shm
+
 # Notebook research artifacts (keep locally, not in submission)
 # briefing-doc.md  # uncomment if you want to exclude
